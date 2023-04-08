@@ -1,0 +1,8 @@
+@import '@fontsource/inter';
+
+:root {
+	--font-body: 'Inter', sans-serif;
+	font-family: var(--font-body);
+
+	--colors-wall-100: 243 242 240;
+}
