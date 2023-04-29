@@ -47,7 +47,7 @@
         <section class="blurb-section">
             <h2>I'm an independent problem-solver who takes responsibility to make projects work.</h2>
             <p>If you're looking to hire a cog in the machine to crank out spec work, I can do that, but I'll inevitably become more than that as I take on more responsibility and ownership.</p>
-            <a href="/engineering-principles" rel="external">Read about engineering principles that have influenced me</a>
+            <a href="engineering-principles">Read about engineering principles that have influenced me</a>
         </section>
 
         <section class="tv-section">

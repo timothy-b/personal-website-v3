@@ -1,3 +1,7 @@
+<script>
+    import { dev } from '$app/environment';
+</script>
+
 <p>These have all had a profound impact on the way I approach software development and work relationships.</p>
 <ul>
     <li><a href="https://echelonfront.com/extreme-ownership/">Extreme Ownership</a> by Jocko Willink</li>
@@ -11,4 +15,8 @@
     <li><a href="https://samnewman.io/books/building_microservices/">Building Microservices</a> by Sam Newman</li>
 </ul>
 
-<a href="/">back</a>
+{#if dev}
+    <a href="/" rel="external">back</a>
+{:else}
+    <a href="/v3/" rel="external">back</a>
+{/if}
