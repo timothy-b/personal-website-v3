@@ -1,0 +1,33 @@
+name: deploy
+run-name: deploy
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          name: id_rsa # optional
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+          #config: ${{ secrets.CONFIG }} # ssh_config; optional
+          if_key_exists: replace # replace / ignore / fail; optional (defaults to fail)
+      
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '19'
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - run: ls -al
+      - run: pnpm install --frozen-lockfile --strict-peer-dependencies
+      - run: pnpm run build
+      - run: scp -r -P $PORT build/* $USERNAME@timothy-b.com:/home/$USERNAME/public_html/v3/
+        env:
+          USERNAME: ${{ secrets.USERNAME }}
+          PORT: ${{ secrets.PORT }}
