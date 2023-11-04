@@ -11,7 +11,13 @@
             "A software company has to think of recruiting the right people as its <b>number one problem</b>. If you are successful, this can solve any other problem. Hire smart people, and they will produce good stuff that you can sell and make money off. Then everything else follows."
         </ListSubItem>
     <li><a href="https://www.joelonsoftware.com/2000/03/23/command-and-conquer-and-the-herd-of-coconuts/">Command and Conquer and the Herd of Coconuts</a> by Joel Spolsky</li>
+        <ListSubItem>
+            "If you hire all A people, he said, they'll also hire A people. But if you hire B people, they'll hire the C people and then it's all over."
+        </ListSubItem>
     <li><a href="https://www.joelonsoftware.com/2002/02/13/the-iceberg-secret-revealed/">The Iceberg Secret, Revealed</a> by Joel Spolsky</li>
+        <ListSubItem>
+            "If you show a nonprogrammer a screen which has a user interface that is 90% worse, they will think that the program is 90% worse."
+        </ListSubItem>
     <li><a href="https://www.joelonsoftware.com/2001/10/14/in-defense-of-not-invented-here-syndrome/">In defense of not-invented-here Syndrome</a> by Joel Spolsky</li>
         <ListSubItem>
             "If it's a core business function — do it yourself, no matter what."
@@ -27,6 +33,7 @@
     <li><a href="https://firesomeonetoday.com/">Fire Someone Today</a> by Bob Pritchett</li>
     <li><a href="https://www.goodreads.com/en/book/show/151881">A Failure of Nerve: Leadership in the Age of the Quick Fix</a> by Edwin H. Friedman</li>
     <li><a href="https://startnextnow.com/">Start Next Now</a> by Bob Pritchett</li>
+    <li><a href="https://blog.3d-logic.com/2023/10/17/accelerate-your-software-engineering-career-by-fixing-something-every-week/">Accelerate your software engineering career by fixing something every week.</a> by Pawel Kadluczka</li>
     <li><a href="https://samnewman.io/books/building_microservices/">Building Microservices</a> by Sam Newman</li>
 </ul>
 

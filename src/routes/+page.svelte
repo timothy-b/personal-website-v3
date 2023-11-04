@@ -39,7 +39,7 @@
                         <img src="tux.png" alt="Linux logo" class="tv-icon tv-single-icon" />
                         <img src="windows_logo.png" alt="Windows logo" class="tv-icon tv-single-icon" style="margin-left: -2px;" />
                     </div>
-                    <p class="tv-blurb">I have experience with Windows, Linux, Arduino, GCP, and Azure.</p>
+                    <p class="tv-blurb">I have experience with Windows, Linux, Arduino, GCP, Azure, Docker, and Kubernetes.</p>
                 </div>
             </div>
         </section>
