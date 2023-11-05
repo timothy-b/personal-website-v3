@@ -1,19 +1,22 @@
+<script>
+    import Tv from './Tv.svelte'
+</script>
+
 <div class="center-column-wrapper">
     <div class="center-column">
-        <h1>🚧 Under Construction 🚧</h1>
-
         <header>
             <h3>Timothy Baumgartner</h3>
         </header>
 
+        <img src="portrait.jpg" alt="me" style="max-width: 200px; border-radius: 0.75rem;" />
+
         <section class="header-tagline">
             <h2>Full-stack developer, recreational athlete, and lifelong tinkerer.</h2>
-            <!-- TODO: resume9  -->
             <a href="../downloads/TGB_Resume.pdf" rel="external">Hire me</a>
         </section>
 
         <section class="tv-section">
-            <h3>Tech</h3>
+            <h3>Tech Experience</h3>
             <p>A very brief overview: The last several years I've primarily worked on
                 a <a href="https://www.logos.com/">templated</a> <a href="https://es.logos.com/">eCommerce</a> <a href="https://faithlife.com/store">solution</a>,
                 <a href="https://www.logos.com/cart">checkout</a> and payment integrations,
@@ -21,7 +24,6 @@
                 and <a href="https://faithlife.com/faithlife-giving/activity">a social media site.</a></p>
             <div class="tv-row">
                 <div class="tv">
-                    <!-- TODO: backend image -->
                     <p class="tv-title">Backend</p>
                     <img src="microsoft_net_logo.svg" alt="Microsoft .NET Logo" class="tv-icon tv-single-icon" />
                     <p class="tv-blurb">I have broad experience with C#, though I'm also interested in opportunities to explore other modern languages such as Go, Rust, and Scala.</p>
@@ -46,50 +48,72 @@
 
         <section class="blurb-section">
             <h2>I'm an independent problem-solver who takes responsibility to make projects work.</h2>
-            <p>If you're looking to hire a cog in the machine to crank out spec work, I can do that, but I'll inevitably become more than that as I take on more responsibility and ownership.</p>
-            <a href="engineering-principles">Read about engineering principles that have influenced me</a>
+            <p>If you're looking to hire an assembly-line worker, I can do that, but I'll inevitably become more than that as I take on more responsibility and ownership.</p>
+            <a href="engineering-principles" style="font-size: large;">Read about engineering principles that have influenced me</a>
         </section>
 
         <section class="tv-section">
             <h3>Selected Projects</h3>
-            <p>I don't spend as much of my free time as I'd like to on writing software, but I'd like to change that eventually :)</p>
+            <p>I don't spend as much of my free time as I'd like to on writing software, but I'd like to change that eventually :) Here are some of the things I've worked on instead.</p>
             <div class="tv-row">
-                <div class="tv">
-                    <p class="tv-title">3D Printing</p>
-                    <img src="ender_5.jpg" alt="Ender 5 render" class="tv-icon" />
-                    <p class="tv-blurb">Hardware, firmware, software, and drafted designs made physical. True full-stack development😄. Check out some of the stuff I've done in this domain over the last few years.</p>
-                </div>
-                <div class="tv">
-                    <p class="tv-title">IOT-SEC</p>
-                    <img src="particle_photon.png" alt="A Particle Photon" class="tv-icon" />
-                    <p class="tv-blurb">A DIY security system using a Raspberry Pi and a glorified ESP32.</p>
-                </div>
-                <div class="tv">
-                    <p class="tv-title">DRZ-400s</p>
-                    <img src="drz_400s.png" alt="Suzuki DRZ-400s motorcycle" class="tv-icon" />
-                    <p class="tv-blurb">I've taken a cheap, common dual-sport motorcycle and turned it into a lightweight adventure touring motorcycle.</p>
-                </div>
+                <Tv title="3D Printing"
+                    imgSrc="ender_5.jpg"
+                    imgAlt="Ender 5 render"
+                    blurb="Hardware, firmware, software, and drafted designs made physical. True full-stack development😄. Check out some of the stuff I've done over the last few years."
+                    href="https://github.com/timothy-b/3d-printing/"/>
+                <Tv title="IOT-SEC"
+                    imgSrc="particle_photon.png"
+                    imgAlt="A Particle Photon"
+                    blurb="A DIY security system using a Raspberry Pi and a glorified ESP32."
+                    href="https://github.com/timothy-b/iot-sec/"/>
+                <Tv title="DRZ-400s"
+                    imgSrc="drz_400s.png"
+                    imgAlt="Suzuki DRZ-400s motorcycle"
+                    blurb="I've taken a cheap, common dual-sport motorcycle and turned it into a lightweight adventure touring motorcycle."
+                    href="drz400s" />
             </div>
         </section>
+
+        <div class="footer">
+            <div><a href="mailto:tim@timothy-b.com">tim@timothy-b.com</a></div>
+            <div><a href="http://timothy-b.com/downloads/TGB_Resume.pdf">Resume</a></div>
+            <div style="display: contents;"><a href="https://www.linkedin.com/in/timothy-baumgartner-759b7b123" style="display: contents;"><img src="LinkedIn_Logo_White.png" alt="LinkedIn logo" style="height: 2rem;" /></a></div>
+            <div style="display: contents;"><a href="https://github.com/timothy-b" style="display: contents;"><img src="GitHub_Logo_White.png" alt="Github logo" /></a></div>
+            <div><span style="display: flex; align-items: center;">Powered by&nbsp;<a href="https://svelte.dev/" style="display: flex; align-items: center;">Svelte&nbsp;<img src="Svelte_Logo.svg" alt="Svelte logo" style="max-width: 32px;"></a></span></div>
+        </div>
     </div>
 </div>
-
-<!-- TODO: footer w/ links & stuff -->
-<!-- TODO: homage to urbit -->
 
 <style>
 
     section {
-        padding-top: 5rem;
+        padding-top: 1rem;
     }
 
     .tv-row {
         display: flex;
+        width: fit-content;
+    }
+
+    .footer {
+        background-color: lightgray;
+        width: 100%;
+        padding: 1rem 0 1rem 0;
     }
 
     @media (min-width: 1024px) {
         .tv-row {
             flex-direction: row;
+        }
+
+        .footer div:not(:last-child)::after {
+            content: " | ";
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -97,19 +121,57 @@
         .tv-row {
             flex-direction: column;
         }
+
+        .footer {
+            display: grid;
+            gap: 1rem;
+            grid-template-rows: repeat(5, 2rem);
+            justify-items: center;
+            align-items: center;
+        }
+
+        .center-column {
+            min-width: 768px;;
+        }
     }
 
-    .center-column-wrapper {
+   .center-column-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        height: max-content;
+        width: 100%;
+        left:0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        background-size: 1800% 1800% !important;
+
+        background: linear-gradient(124deg, #1ddde8, #2b1de8);
+
+        animation: rainbow 9s ease infinite;
+    }
+
+    @keyframes rainbow { 
+        0% {background-position:0% 82%}
+        50% {background-position:100% 19%}
+        100% {background-position:0% 82%}
     }
 
     .center-column {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 1536px;
+        width: min-content;
+        background-color: white;
+        box-shadow: 0 0 12px 4px #000;
+    }
+
+    .header-tagline a {
+        display: flex;
+        justify-content: center;
     }
 
     @media (min-width: 512px) {
@@ -118,15 +180,23 @@
         }
 
         section.blurb-section {
-            width: 50%;
+            width: 66%;
         }
 
         section.tv-section {
-            width: 66%;
+            /* width: 66%; */
+            width: min-content;
+            padding: 2em;
         }
     }
 
     @media (max-width: 511px) {
+        .center-column {
+            align-self: flex-start;
+            width: auto;
+            min-width: auto;
+        }
+
         .header-tagline {
             width: 90%;
         }
@@ -160,11 +230,10 @@
 
     .tv {
         border-radius: 0.75rem;
-        --tw-bg-opacity: 1;
         display: flex;
         flex-direction: column;
         flex: 1 1 0%;
-        background-color: rgb(var(--colors-wall-100)/var(--tw-bg-opacity));
+        background-color: aliceblue;
         padding: 1rem;
         margin: 1rem;
         min-width: 256px;
@@ -173,4 +242,12 @@
     .tv:not(:first-child) {
         margin-left: 1rem;
     }
+
+    .blurb-section {
+        background-color: lightblue;
+        padding: 1rem;
+        border-radius: 0.75rem;
+    }
+
+    
 </style>
