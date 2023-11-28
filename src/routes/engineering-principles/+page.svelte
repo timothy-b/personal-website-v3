@@ -10,6 +10,10 @@
         <ItalicListSubItem>
             "A software company has to think of <b>recruiting the right people</b> as its <b>number one problem</b>. If you are successful, this can solve any other problem. Hire smart people, and they will produce good stuff that you can sell and make money off. Then everything else follows."
         </ItalicListSubItem>
+    <li><a href="https://learn.microsoft.com/en-us/archive/blogs/ericlippert/gretchen-and-zoe-are-cool">Gretchen and Zoe are Cool</a> by Eric Lippert</li>
+        <ItalicListSubItem>
+            "There is <b>nothing</b> more crucial to the long-term health of a software business than hiring the right people. Ironically, that is a highly non-technical problem!"
+        </ItalicListSubItem>
     <li><a href="https://www.joelonsoftware.com/2000/03/23/command-and-conquer-and-the-herd-of-coconuts/">Command and Conquer and the Herd of Coconuts</a> by Joel Spolsky</li>
         <ItalicListSubItem>
             "If you hire all A people, he said, they'll also hire A people. But if you hire B people, they'll hire the C people and then it's all over."
