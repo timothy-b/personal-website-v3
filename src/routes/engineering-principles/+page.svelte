@@ -18,6 +18,10 @@
         <ItalicListSubItem>
             "If you hire all A people, he said, they'll also hire A people. But if you hire B people, they'll hire the C people and then it's all over."
         </ItalicListSubItem>
+    <li><a href="https://faithlife.codes/blog/2023/09/rest-level-zero-dot-five/">REST Level 0.5</a> by Erik Lanning</li>
+        <ItalicListSubItem>
+            "I've read several articles about REST, even a bit of the original paper. But I still have quite a vague idea about what it is. I'm beginning to think that nobody knows, that it's simply a very poorly defined concept. Like Web 2.0, everyone talked about it but nobody could give a clear definition. Thoughts?" - RivieraKid
+        </ItalicListSubItem>
     <li><a href="https://www.joelonsoftware.com/2002/02/13/the-iceberg-secret-revealed/">The Iceberg Secret, Revealed</a> by Joel Spolsky</li>
         <ItalicListSubItem>
             "If you show a nonprogrammer a screen which has a user interface that is 90% worse, they will think that the program is 90% worse."
